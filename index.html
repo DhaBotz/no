@@ -1,0 +1,101 @@
+<html>
+<meta charset='UTF-8' />
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5'
+  name='viewport' />
+<meta content='IE=edge' http-equiv='X-UA-Compatible' />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
+<link href="https://lv3000.likeadream.repl.co/style.css" rel="stylesheet" type="text/css" />
+<script src="https://lv3000.likeadream.repl.co/script.js"></script>
+
+<head>
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: url("https://i.postimg.cc/xTrrxC13/sanur.jpg");
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      animation: none;
+      transition: all .3s ease;
+    }
+    .aku{
+      font-size: 80px;
+    }
+  </style>
+  <div id="konten">
+
+    <div id="foto">
+      <div class="image">
+        <img id="photo" src="https://i.postimg.cc/zXNZhvZZ/hati.png" width="200px" height="200px" />
+      </div>
+        <!-- <div class="foto"><div class="image">
+          <img src="https://i.postimg.cc/MHGjJdtf/c178eae8b11823b36f4d76fc5f8a2a29.gif" width="100px" height="100px"/></div><p id="textnama"></p>
+        </div> -->
+
+      <span id="sp2"></span>
+    </div>
+
+    <div id='slider'>
+      <p><i>Geser dong &#128073;</i></p>
+      <p>Haii Kamu yang lagi baca :3</p>
+      <p>Yang Baik</p>
+      <p>Yang Cantikkk</p>
+      <p>Yang Pengertian</p>
+      <p>Yang Jujur</p>
+      <p>Yang Ngangenin 😘</p>
+      <p>Akuu mau bilang nihh</p>
+      <p>Boleh gigit kamu ngga sihh???</p>
+      <p>Candaa isss😜</p>
+      <p>Oh iyaa, <br> Selamat Malam yaaaaa! <br> 😚😚</p>
+      <p>Selamat Beristirahat!</p>
+      <p>Semoga kamu mimpi indah<br> dan tetap semangat menghadapi hari hari esok!</p>
+      <p>Sekali lagi. Selamat malam</p>
+      <p>Cieee lagi baca web ku ya, <br> Makasih udah mampir di web<span class="aku">aku</span><br> <br> Hehe!</p>
+      <p>aku gabut doang ini mah <br> Jadi jangan marah ya!</p>
+      <p>I Love U Kamu 😘😘</p>
+      <p>Pencet LOVE ini dong~<label class='lovein' onClick="duar()">&#128158;</label></p>
+    </div>
+    <div id="contTom"><a class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim</a></div>
+  </div>
+  <div id="bodyblur"></div>
+  <script>
+    //Teks terakhir
+    var a = 0,
+      finish;
+    finish = "Selamat malam Buat kamu";
+
+    function play() {
+      //Link Audio Bisa Diganti
+      var audio = new Audio('https://lv3000.likeadream.repl.co/musik.mp3');
+      audio.play();
+    }
+
+    //Opsi WhatsApp
+    function bukaWa() {
+      window.location = "https://api.whatsapp.com/send?phone=+6282288783972&text=Aku udah liat semuanya Yud" + "%0A%0A" + 
+        "Makasih yaaaaa ayang Yudha Perdana" + "%0A%0A" + "Aku Sayang Kamu Yud" + "%0A%0A" + dateTime + "%0A%0A" + "ttd" + "%0A%0A" + "Ganti jadi nama kamu";
+    }
+  </script>
+
+  <script type="text/javascript">
+    var today = new Date();
+    var date = today.getDate() + '/' + (today.getMonth() + 1) + '/' + today.getFullYear() + '.';
+    var dateTime = date;
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+    });
+    async function mulai() {
+      await swals.fire('Hai kamu mau baca we yudha perdana!');
+      setTimeout(showDiv, 1000);
+      play();
+    }
+    mulai();
+  </script>
+
+</body>
+
+</html>
